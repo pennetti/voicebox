@@ -1,0 +1,9 @@
+.sample-sources {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+
+  button {
+    margin-left: 0.5em;
+  }
+}

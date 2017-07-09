@@ -1,0 +1,62 @@
+@import "~normalize.css";
+
+html * {
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+form {
+  margin: 0;
+}
+
+button, .button {
+  flex: 0 1 8em;
+
+  background-color: white;
+  padding: .5rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover:not(:disabled) {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    color: lightgray;
+  }
+}
+
+textarea {
+  flex: 0 0 100%;
+
+  width: 100%;
+  height: 8em;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: .5rem;
+
+  resize: none;
+}
+
+textarea, button, .button {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+
+  margin-bottom: 0.5em;
+
+  &:disabled {
+    border-color: lightgray;
+  }
+}
