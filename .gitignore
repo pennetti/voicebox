@@ -4,5 +4,6 @@ staticfiles
 .env
 .idea
 bundle.js
+bundle.js.map
 node_modules
 npm-debug.log
