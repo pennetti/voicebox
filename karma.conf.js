@@ -9,12 +9,12 @@ module.exports = function (config) {
         files: [
             // https://github.com/ariya/phantomjs/issues/12401
             './node_modules/promise-polyfill/promise.js',
-            'web/test/**/*.test.js',
-            'web/components/**/*.test.js'
+            'client/test/**/*.test.js',
+            'client/components/**/*.test.js'
         ],
         exclude: [],
         preprocessors: {
-            'web/**/*.js': ['webpack']
+            'client/**/*.js': ['webpack']
         },
         plugins: [
             'karma-webpack',
